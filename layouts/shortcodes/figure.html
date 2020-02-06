@@ -1,0 +1,6 @@
+{{ $original := .Page.Resources.GetMatch (printf "%s*" (.Get "src")) }}
+{{ if $original }}
+  Yep!
+{{ else }}
+  Nope!
+{{ end }}
